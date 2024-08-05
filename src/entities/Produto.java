@@ -14,6 +14,6 @@ public class Produto {
 
 
     public void etiquetaProduto(){
-        
+        System.out.println(nome + " é um produto comum, custando: " + preco);
     }
 }

@@ -11,7 +11,7 @@ public final class ProdutoImportado extends Produto{
 
     @Override
     public void etiquetaProduto(){
-        System.out.println(nome + "é um produto importado, custando: " + precoFinal());
+        System.out.println(nome + " é um produto importado, custando: " + precoFinal());
     }
 
     public double precoFinal(){

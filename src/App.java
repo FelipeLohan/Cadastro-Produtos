@@ -53,7 +53,8 @@ public class App {
                                     teclado.nextLine();
                             System.out.println("Data de Fabricacao(dd/mm/yyyy)");
                                 String dataFabricacaoString = teclado.nextLine();
-                                    produtos.add(new ProdutoUsado(nomeUsado, precoUsado, dataFabricacaoString));                   
+                                Date dataFabricacao = fmt.parse(dataFabricacaoString);
+                                    produtos.add(new ProdutoUsado(nomeUsado, precoUsado, dataFabricacao));                   
                             break;
                         default:
                             System.out.println("Opcao invalida.");
@@ -62,6 +63,10 @@ public class App {
 
             }while (opcao == 1 && opcao == 2 && opcao == 3);
 
+        }
+
+        for (Produto produto : produtos) {
+            produto.etiquetaProduto();
         }
     }
 }

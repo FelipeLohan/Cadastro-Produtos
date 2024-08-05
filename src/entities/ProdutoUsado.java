@@ -17,6 +17,6 @@ public final class ProdutoUsado extends Produto{
 
     @Override
     public void etiquetaProduto(){
-        
+        System.out.println(nome + "é um produto usado, fabricado em " + dataFabricacao + " custando: " + preco);
     }
 }
