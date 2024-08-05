@@ -6,6 +6,15 @@ public final class ProdutoUsado extends Produto{
 
     private Date dataFabricacao;
 
+    
+
+    public ProdutoUsado(String nome, double preco, Date dataFabricacao) {
+        super(nome, preco);
+        this.dataFabricacao = dataFabricacao;
+    }
+
+
+
     @Override
     public void etiquetaProduto(){
         
